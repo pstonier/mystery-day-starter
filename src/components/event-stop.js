@@ -22,10 +22,12 @@ const EventStop = ({ children, eventNumber, eventLocation, eventImage, eventDesc
                         <h2>{ eventLocation }</h2>
                     </a>
                 </div>
+                { eventDescription ? ( <p>{ eventDescription }</p> ) : '' }
             </div>
-            { eventDescription ? ( <p>{ eventDescription }</p> ) : '' }
             { children }
-            <img src={ eventImage } alt={ eventLocation } />
+            <a href={ eventLink }>
+                <img src={ eventImage } alt={ eventLocation } />
+            </a>
         </div>
     )
 }

@@ -7,6 +7,13 @@ import SEO from "../components/seo"
 import EventStop from "../components/event-stop"
 import bgImage from "../images/jassemine-mystery-day-background.png"
 import tacoPaul from "../images/paul-at-taco-bell.jpg"
+import cafeKubal from "../images/cafe-kubal.jpg"
+import eversonMuseum from "../images/everson-museum.jpg"
+import otroCinco from "../images/otro-cinco.jpg"
+import RojiTea from "../images/roji-tea.jpg"
+import SweetPraxis from "../images/sweet-praxis.jpg"
+import BooksMelodies from "../images/books-melodies.jpg"
+import DestinyUSA from "../images/destiny-usa.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -15,42 +22,54 @@ const IndexPage = () => (
       eventNumber="1"
       eventLocation="Taco Bell"
       eventImage={ tacoPaul }
+      eventLink="https://www.instagram.com/tacobell/"
+      eventDescription="Hanging with my Taco Bell Bae"
     />
     <EventStop
       eventNumber="2"
-      eventLocation="Cafe Kubala"
-      eventImage={ tacoPaul }
+      eventLocation="Cafe Kubal"
+      eventImage={ cafeKubal }
+      eventLink="https://www.instagram.com/cafekubal/"
+      eventDescription="Energy and maybe a snack for our next adventure."
     />
     <EventStop
       eventNumber="3"
       eventLocation="Everson Museum of Art"
-      eventImage={ tacoPaul }
+      eventImage={ eversonMuseum }
+      eventLink="https://www.instagram.com/eversonmuseum/"
     />
     <EventStop
       eventNumber="4"
       eventLocation="Otro Cinco"
-      eventImage={ tacoPaul }
+      eventImage={ otroCinco }
+      eventDescription="Linner"
+      eventLink="https://www.instagram.com/otro5cinco/"
     />
     <EventStop
       eventNumber="5"
       eventLocation="Roji Tea Lounge"
-      eventImage={ tacoPaul }
+      eventImage={ RojiTea }
+      eventDescription="Let's get some boba!"
+      eventLink="https://www.instagram.com/rojitealounge/"
     />
     <EventStop
       eventNumber="6"
       eventLocation="The Sweet Praxis"
-      eventImage={ tacoPaul }
+      eventImage={ SweetPraxis }
+      eventDescription="Sweets for my sweet."
+      eventLink="https://www.instagram.com/thesweetpraxis/"
     />
     <EventStop
       eventNumber="7"
-      eventLocation="Books n Tunes"
-      eventImage={ tacoPaul }
+      eventLocation="Books n Melodies"
+      eventImage={ BooksMelodies }
+      eventLink="https://www.instagram.com/books_and_melodies/"
     />
     <EventStop
-      eventNumber="7"
+      eventNumber="8"
       eventLocation="DestinyUSA"
-      eventDescription="Torrid, Nordstrom, etc."
-      eventImage={ tacoPaul }
+      eventDescription="$100 to spend on whatever you want…Torrid, Nordstrom, etc."
+      eventImage={ DestinyUSA }
     />
   </Layout>
 )
