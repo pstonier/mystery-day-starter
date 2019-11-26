@@ -7,6 +7,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('../images/jassemine-mystery-day-background.png');
 }
 article,
 aside,
@@ -620,3 +621,32 @@ pre tt:after {
     font-size: 100%;
   }
 }
+.event-stop {
+  position: relative;
+  padding: 1em;
+}
+.event-number {
+  background: orangered;
+  border-radius: 50%;
+  color: white;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.event-number p {
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+}
+.event-location img {
+}
+
+
