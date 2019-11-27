@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Helmet from "react-helmet"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -15,9 +16,16 @@ import SweetPraxis from "../images/sweet-praxis.jpg"
 import BooksMelodies from "../images/books-melodies.jpg"
 import DestinyUSA from "../images/destiny-usa.jpg"
 
-const IndexPage = () => (
+const IndexPage = () => [
+  <Helmet>
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet"></link>
+  </Helmet>,
   <Layout>
     <SEO title="Home" />
+    <div className="intro">
+      <p>On December 7th, we'll be off on another adventure together to explore Syracuse.</p>
+      <p>You'll have $100 to spend on whatever you like as we shop with some yummy pit stops along the way.</p>
+    </div>
     <EventStop
       eventNumber="1"
       eventLocation="Taco Bell"
@@ -68,10 +76,11 @@ const IndexPage = () => (
     <EventStop
       eventNumber="8"
       eventLocation="DestinyUSA"
-      eventDescription="$100 to spend on whatever you want…Torrid, Nordstrom, etc."
+      eventDescription="Torrid, Nordstrom, etc… it's your turn for a shopping montage."
       eventImage={ DestinyUSA }
+      eventLink="https://www.instagram.com/destinyusa/"
     />
   </Layout>
-)
+]
 
 export default IndexPage

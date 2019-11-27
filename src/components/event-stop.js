@@ -21,8 +21,8 @@ const EventStop = ({ children, eventNumber, eventLocation, eventImage, eventDesc
                     <a href={ eventLink }>
                         <h2>{ eventLocation }</h2>
                     </a>
+                    { eventDescription ? ( <p>{ eventDescription }</p> ) : '' }
                 </div>
-                { eventDescription ? ( <p>{ eventDescription }</p> ) : '' }
             </div>
             { children }
             <a href={ eventLink }>
