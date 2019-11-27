@@ -72,6 +72,7 @@ const IndexPage = () => [
       eventLocation="Books n Melodies"
       eventImage={ BooksMelodies }
       eventLink="https://www.instagram.com/books_and_melodies/"
+      eventDescription="Gettin jazzy…"
     />
     <EventStop
       eventNumber="8"
