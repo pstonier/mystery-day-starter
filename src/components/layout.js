@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import { white } from "ansi-colors"
+import boopGif from "../images/boop.gif"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,20 +28,17 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
+        className="content-wrap"
         style={{
-          margin: `1em 1em`,
-          maxWidth: 960,
           padding: `1em`,
           paddingTop: 0,
           background: 'white',
-          borderRadius: '2em',
+          borderRadius: '1em',
         }}
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <img src={ boopGif } alt="kitty booping guy" />
         </footer>
       </div>
     </>
