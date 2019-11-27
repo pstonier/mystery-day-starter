@@ -40,6 +40,9 @@ progress {
 template {
   display: none;
 }
+main {
+  overflow: hidden;
+}
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -233,11 +236,16 @@ h1 {
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 3.25rem;
   line-height: 1.1;
   font-family: 'Calistoga', cursive;
   text-align: center;
   letter-spacing: .03em;
+  font-size: 2.25rem;
+}
+@media screen and ( min-width: 400px ) {
+  h1 {
+    font-size: 3.25rem;
+  }
 }
 h2 {
   margin-left: 0;
@@ -665,8 +673,13 @@ pre tt:after {
   font-family: 'Calistoga', cursive;
   color: #004280;
   margin-bottom: .25em;
-  font-size: 2.5em;
+  font-size: 1.5em;
   text-rendering: geometricPrecision;
+}
+@media screen and ( min-width: 400px ) {
+  .event-location h2 {
+    font-size: 2.5em;
+  }
 }
 .event-location a {
   text-decoration: none;
